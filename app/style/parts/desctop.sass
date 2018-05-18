@@ -2,13 +2,168 @@ $transition: all 0.3s ease
 
 
 /* Main style */
+*
+    outline: none !important
+
 body
     margin: 0
     padding: 0
     font-family: roboto-cond
+    background-color: #000
+
+h1
+    font-size: 52px
+    color: #fff
+    width: 100%
+    text-transform: uppercase
+    margin-bottom: 20px
+
+h2
+    font-size: 48px
+    width: 100%
+    color: #fff
+    margin-bottom: 35px
+
+h3
+    font-size: 36px
+    width: 100%
+    color: #fff
+    margin-bottom: 20px
+
+p, .text
+    display: block
+    color: #fff
+    line-height: 24px
+    font-size: 16px
+
+    &.text-gray
+        opacity: 0.6
+
+a
+    color: inherit
+    text-decoration: none !important
+    transition: $transition
+
+    &:hover
+        opacity: 0.8
+
+.btn
+    padding: 0 42px
+    height: 60px
+    line-height: 60px
+    background-color: #fff
+    display: inline-block
+    margin: 40px auto 0
+    font-size: 18px
+    color: #000
+    border-radius: 0
+    text-transform: uppercase
+    transition: $transition
+
+    &:hover
+        color: #000
+        opacity: 0.8
+
+.poa
+    position: absolute
+
+    &.po1-image
+        left: 0
+
+    &.po2-image
+        right: 0
+
+.oh
+    overflow: hidden !important
+    position: relative
 
 .center
     text-align: center !important
+
+.left
+    text-align: left !important
+
+.right
+    text-align: right !important
+
+nav, .navigation
+    height: 72px
+    box-sizing: border-box
+    padding-top: 8px
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 40
+    transition: $transition
+
+    .logo
+        img
+            transition: $transition
+
+    &.fix
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05)
+        background-color: #000
+
+        .logo
+            margin-top: 12px
+
+            img
+                width: 40px
+
+        .nav
+            margin-left: 30px
+
+            li
+                margin-right: 40px
+
+                a
+                    font-size: 14px
+
+        .right-box
+            font-size: 14px
+
+            .phone
+                font-size: 18px
+
+    .nav
+        margin-left: 64px
+        margin-top: 19px
+        transition: $transition
+
+        li
+            display: inline-block
+            margin-right: 64px
+            vertical-align: middle
+            transition: $transition
+
+            &:last-child
+                margin-right: 0
+
+            a
+                color: #d8d8d8
+                font-size: 20px
+
+                &:hover
+                    text-decoration: none
+                    color: #fff
+
+                &.active
+                    color: #fff
+
+    .right-box
+        color: rgba(255, 255, 255, 0.4)
+        font-size: 18px
+        text-align: right
+        position: absolute
+        right: 0
+        top: 0
+        transition: $transition
+
+        a, .phone
+            font-size: 24px
+            display: block
+            color: #fff
 
 .section
     overflow-x: hidden
@@ -22,7 +177,7 @@ body
 
     &.section1
         background-image: url("../images/header.jpg")
-        height: 100vh
+        height: 968px
         width: 100%
 
         &:before
@@ -31,3 +186,60 @@ body
             background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), #000000)
             width: 100%
             height: 100%
+            z-index: 5
+
+        .row
+            position: relative
+            z-index: 10
+
+        .logo-big
+            margin: 176px auto 40px
+            display: block
+            width: 100%
+
+        .text.text-gray
+            font-size: 30px
+            width: 100%
+
+    &.section2
+        background-color: #000
+        padding-bottom: 90px
+
+        .text
+            max-width: 535px
+            margin: 0 auto
+            margin-bottom: 52px
+
+        .advantage-item
+            max-width: 200px
+            margin: 0 auto 40px
+            font-size: 16px
+            color: #fff
+            text-align: center
+
+            &:before
+                content: ''
+                display: block
+                margin: 0 auto 18px
+                width: 61px
+                height: 61px
+                background-position: center center
+                background-size: 50px
+                background-repeat: no-repeat
+
+            &.icon-1:before
+                background-image: url("../images/icon1.png")
+
+            &.icon-2:before
+                background-image: url("../images/icon2.png")
+
+            &.icon-3:before
+                background-image: url("../images/icon3.png")
+
+    &.section3
+        padding: 340px 0
+        background-image: url("../images/section2.png")
+
+        .text
+            max-width: 450px
+
