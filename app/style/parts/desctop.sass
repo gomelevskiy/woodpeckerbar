@@ -3,5 +3,31 @@ $transition: all 0.3s ease
 
 /* Main style */
 body
-  margin: 0
-  padding: 0
+    margin: 0
+    padding: 0
+    font-family: roboto-cond
+
+.center
+    text-align: center !important
+
+.section
+    overflow-x: hidden
+    position: relative
+    box-sizing: border-box
+
+    &-bg
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: top center
+
+    &.section1
+        background-image: url("../images/header.jpg")
+        height: 100vh
+        width: 100%
+
+        &:before
+            content: ''
+            position: absolute
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), #000000)
+            width: 100%
+            height: 100%

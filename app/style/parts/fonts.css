@@ -1,0 +1,8 @@
+/* Generate font ROBOTO CONDENSED REGULAR */
+@font-face {
+    font-family: 'roboto-cond';
+    src: url('../fonts/RobotoCondensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
