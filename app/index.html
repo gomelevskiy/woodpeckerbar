@@ -3,10 +3,28 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width; initial-scale=0.85; maximum-scale=0.85; user-scalable=0;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="Woodpecker" name="apple-mobile-web-app-title" />
+    <meta content="Woodpecker" name="application-name" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
 
     <title>Woodpecker bar - пивной бар</title>
 
@@ -14,12 +32,15 @@
         <div class="container">
             <div class="row oh">
                 <a href="/" class="logo"><img src="images/logo.svg" alt="логопит бара Woodpecker"/></a>
-                <ul class="nav">
-                    <li><a class="active" href="#">О нас</a></li>
-                    <li><a href="#">Атмосфера</a></li>
-                    <li><a href="#">Наше пиво</a></li>
-                    <li><a href="#">Как нас найти</a></li>
-                </ul>
+                <div id="navigation" class="nav navbar navbar-expand-md" role="navigation">
+                    <div class="item"><a data-number="1" href="#section2">О нас</a></div>
+                    <div class="item"><a data-number="2" href="#section3">Атмосфера</a></div>
+                    <div class="item"><a data-number="3" href="#section4">Наше пиво</a></div>
+                    <div class="item"><a data-number="4" href="#section6">Как нас найти</a></div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
                 <div class="right-box">
                     <a href="tel:+79992223344" class="phone">+7 (999) 222-33-44</a>
                     Заказ столиков
@@ -27,7 +48,7 @@
             </div>
         </div>
     </nav>
-    <header class="section header section-bg section1">
+    <header id="header" class="section header section-bg section1">
         <div class="container">
             <div class="row center">
                 <img class="logo-big" src="images/logo-big.svg" alt="логопит бара Woodpecker"/>
@@ -38,42 +59,40 @@
         </div>
     </header>
 
-    <section class="section section2 center">
+    <section id="section2" class="section section2 center">
         <div class="container">
             <div class="row center">
-                <div class="col-12">
+                <div class="col-12 col-md-12">
                     <h2>О нас</h2>
                     <p class="text">Идейные соображения высшего порядка, а также сложившаяся структура организации
                         позволяет оценить значение форм развития. Идейные соображения высшего порядка, а также реализация намеченных</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-4 advantage-item icon-1">
+                <div class="col-12 col-md-4 advantage-item icon-1">
                     Лаундж-зона<br/>
                     с креслом-качалкой
                 </div>
-                <div class="col-4 advantage-item icon-2">
+                <div class="col-12 col-md-4 advantage-item icon-2">
                     Арахис и крендельки<br/>
                     к каждому бокалу пива
                 </div>
-                <div class="col-4 advantage-item icon-3">
+                <div class="col-12 col-md-4 advantage-item icon-3">
                     Настольные игры<br/>
                     для каждого
                 </div>
             </div>
             <a href="#" class="btn btn-menu">Посмотреть меню</a>
         </div>
-        <!--<img src="images/beer1.png" class="poa po1-image" width="300" alt="woodpecker bar пиво"/>-->
-        <!--<img src="images/beer2.png" class="poa po2-image" width="300" alt="woodpecker bar пиво"/>-->
     </section>
 
-    <section class="section section-bg section3">
-        <div class="container-bg">
-            <div class="bg-scroll" style="background-image: url('images/cut2.png')"></div>
-        </div>
+    <section id="section3" class="section section-bg section3">
         <div class="container">
+            <div class="container-bg">
+                <div class="bg-scroll" style="background-image: url('images/cut2.png')"></div>
+            </div>
             <div class="row left">
-                <div class="col-5">
+                <div class="col-12 col-md-5">
                     <h2>Атмосфера</h2>
                     <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
                         <br/><br/>
@@ -84,13 +103,13 @@
         </div>
     </section>
 
-    <section class="section section-bg section4">
-        <div class="container-bg">
-            <div class="bg-scroll" style="background-image: url('images/cut3.png')"></div>
-        </div>
+    <section id="section4" class="section section-bg section4">
         <div class="container">
+            <div class="container-bg">
+                <div class="bg-scroll" style="background-image: url('images/cut3.png')"></div>
+            </div>
             <div class="row right">
-                <div class="offset-7 col-5">
+                <div class="offset-0 offset-md-7 col-12 col-md-5">
                     <h2>Только лучшее пиво</h2>
                     <p class="text right">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
                         <br/><br/>
@@ -101,13 +120,17 @@
         </div>
     </section>
 
-    <section class="section section5">
+    <section id="section5" class="section section5">
         <div class="container">
             <div class="row right">
-                <div class="col-6">
-
+                <div class="col-12 col-md-6 order-md-5">
+                    <div class="widget-inst">
+                        <!-- InstaWidget -->
+                        <a href="https://instawidget.net/v/user/woodpeckerbar.spb" id="link-3715f72ce359fbb63d2f69fa7b1daeaae1581424d0d6d6ab117cfc370bad350a">@woodpeckerbar.spb</a>
+                        <script src="https://instawidget.net/js/instawidget.js?u=3715f72ce359fbb63d2f69fa7b1daeaae1581424d0d6d6ab117cfc370bad350a&width=300px"></script>
+                    </div>
                 </div>
-                <div class="offset-1 col-5">
+                <div class="offset-0 col-12 offset-md-1 col-md-5 order-md-6 widget-inst__text">
                     <h2>Мы в Instagram</h2>
                     <p class="text right">Подписывайся на наш instagram 👍
                         <br/><br/>
@@ -119,6 +142,43 @@
             </div>
         </div>
     </section>
+
+    <section id="section6" class="section section-bg section6">
+        <div class="container">
+            <div class="row center">
+                <div class="col-12 col-md-12">
+                    <h2>Как до нас добраться</h2>
+                    <a href="/" class="logo"><img src="images/logo.svg" alt="logo"/></a>
+                    <h3>ул. Михаила Дудина, 10 (м. Парнас)</h3>
+                    <div class="map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A58de1abc1054ab9c673a1cd5e00cf4e373fff440c94bf3065f2263f35bd000e0&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-md-5 left">
+                    <p class="text text-article">Следите за нашими новостями в соц. сетях</p>
+                    <ul class="social-list">
+                        <li><a href="#"><img src="images/vk.svg" alt="icon"/></a></li>
+                        <li><a href="#"><img src="images/instagram.svg" alt="icon"/></a></li>
+                    </ul>
+                </div>
+                <div class="m-hide col-2 col-md-2 center">
+                    <a href="/" class="logo"><img src="images/logo.svg" alt="logo"/></a>
+                </div>
+                <div class="col-5 col-md-5 right">
+                    <p class="text"><span>График работы:</span> с 16:00 до 02:00</p>
+                    <p class="text"><span>Адрес:</span> ул. Михаила Дудина, 10 (м. Парнас)</p>
+                    <p class="text"><span>Бронь столиков:</span> +7 (999) 999-99-99</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!--include style-->
     <link href="css/all.css" rel="stylesheet">

@@ -70,6 +70,7 @@ a
 
     &.po1-image
         left: 0
+        top: 300px
 
     &.po2-image
         right: 0
@@ -87,7 +88,7 @@ a
 .right
     text-align: right !important
 
-nav, .navigation
+.navigation
     height: 72px
     box-sizing: border-box
     padding-top: 8px
@@ -115,7 +116,7 @@ nav, .navigation
         .nav
             margin-left: 30px
 
-            li
+            .item
                 margin-right: 40px
 
                 a
@@ -132,7 +133,7 @@ nav, .navigation
         margin-top: 19px
         transition: $transition
 
-        li
+        .item
             display: inline-block
             margin-right: 64px
             vertical-align: middle
@@ -197,7 +198,7 @@ nav, .navigation
 
     &.section1
         background-image: url("../images/header.jpg")
-        height: 968px
+        padding-bottom: 140px
         width: 100%
 
         &:before
@@ -223,6 +224,7 @@ nav, .navigation
 
     &.section2
         background-color: #000
+        padding-top: 120px
         padding-bottom: 90px
 
         .text
@@ -262,11 +264,6 @@ nav, .navigation
         .text
             max-width: 450px
 
-        .container-bg
-            //transform: rotate(20deg)
-
-            .bg-scroll
-                //transform: rotate(-20deg)
 
     &.section4
         padding: 240px 0 240px
@@ -274,8 +271,52 @@ nav, .navigation
         .text
             max-width: 450px
 
-        .container-bg
-            //transform: rotate(-20deg)
 
-            .bg-scroll
-                //transform: rotate(20deg)
+    &.section5
+        padding: 240px 0
+
+        .widget-inst
+            text-align: left
+
+            &__text
+                padding-top: 80px
+
+                h2
+                    font-size: 48px
+                    margin-bottom: 40px
+
+                .text
+                    font-size: 28px
+                    color: rgba(255, 255, 255, 0.7)
+                    line-height: 46px
+
+    &.section6
+        padding: 240px 0
+        background-image: url("../images/section5.jpg")
+
+        .logo
+            margin-bottom: 25px
+            display: block
+
+        h3
+            margin-bottom: 76px
+
+footer, .footer
+    padding: 16px 0
+
+    .text-article
+        margin-top: 14px
+
+    .logo
+        margin-top: 14px
+        display: block
+
+    .social-list
+        margin: 16px 0 0 0
+        padding: 0
+
+        li
+            list-style: none
+            display: inline-block
+            vertical-align: middle
+            margin-right: 16px
